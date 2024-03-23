@@ -1,0 +1,20 @@
+@keyframes open {
+	from {
+		opacity: 0;
+	} 
+
+	to {
+		opacity: 1;
+	}
+}
+
+.container {
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+
+	display: flex;
+	gap: 40px;
+
+	animation: open 1s;
+}

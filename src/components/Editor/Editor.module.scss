@@ -1,0 +1,44 @@
+:root {
+	--textarea-border-color: #49495c;
+	--textarea-focus-border-color: #8888a7;
+}
+
+.editorWrapper {
+	width: 48%;
+
+	display: flex;
+	flex-direction: column;
+}
+
+.toolsWrapper {
+	margin-bottom: 10px;
+}
+
+.editorWindow {
+	width: 100%;
+	height: 100%;
+}
+
+.editorTextarea {
+	width: 100%;
+	height: 95%;
+	resize: none;
+
+	padding: 10px;
+
+	background-color: var(--window-bg-color);
+
+	border: 3px solid;
+	border-color: var(--textarea-border-color);
+	border-radius: 10px;
+
+	outline: none;
+
+	font-family: Lato-Regular;
+	font-size: 14pt;
+	color: var(--font-color);
+
+	&:focus {
+		border-color: var(--textarea-focus-border-color);
+	}
+}

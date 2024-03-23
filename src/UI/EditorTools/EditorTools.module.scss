@@ -1,0 +1,82 @@
+:root {
+	--tools-title-color: #808080;
+	--tool-button-bg-color: #222230;
+	--tool-button-hover-bg-color:rgb(76, 76, 105);
+}
+
+.tools {
+	display: flex;
+	gap: 10px;
+}
+
+.toolsTitle {
+	font-family: Lato-Regular;
+	font-size: 14px;
+	color: var(--tools-title-color);
+}
+
+.toolsDivider {
+	color: var(--tool-button-bg-color);
+}
+
+.headingTools {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+}
+
+.headingButtons {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 5px;
+}
+
+.headingButton {
+	padding: 3px;
+
+	color: var(--font-color);
+	background-color: var(--tool-button-bg-color);
+
+	border: none;
+	border-radius: 5px;
+
+	&:hover {
+		background-color: var(--tool-button-hover-bg-color);
+	}
+}
+
+.toolsContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 5px;
+}
+
+.buttonsContainer {
+	height: 100%;
+
+	display: flex;
+	align-items: center;	
+	gap: 5px;
+}
+
+.button {
+	width: 35px;
+	height: 25px;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-color: var(--tool-button-bg-color);
+	border: none;
+	border-radius: 5px;
+
+	font-family: Lato-Regular;
+	color: var(--font-color);
+
+	&:hover {
+		background-color: var(--tool-button-hover-bg-color);
+	}
+}

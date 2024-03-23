@@ -1,0 +1,28 @@
+:root {
+	--app-bg-color: #12121a;
+	--font-color: #dfdddd;
+
+	--window-bg-color: #222230;
+}
+
+@font-face {
+	font-family: Lato-Regular;
+	src: url(./assets/fonts/Lato-Regular.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	background-color: var(--app-bg-color);
+}
+
+.app {
+	height: 100vh;
+
+	position: relative;
+	background-color: var(--app-bg-color);
+}

@@ -1,0 +1,113 @@
+:root {
+	--modal-overlay-bg-color: #03030350;
+	--modal-bg-color: #dbdada;
+	--modal-font-color: #111;
+
+	--modal-input-focus-border: #323363;
+
+	--modal-input-text-color: #383838;
+
+	--modal-apply-bg-color: rgb(106, 190, 89);
+	--modal-hover-apply-bg-color: rgb(116, 241, 91);
+
+	--modal-cancel-bg-color: rgb(201, 92, 92);
+	--modal-hover-cancel-bg-color: rgb(233, 94, 94);
+}
+
+.modalOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+
+	height: 100vh;
+	width: 100vw;
+
+	display: flex;
+	justify-content: center;
+
+	background-color: var(--modal-overlay-bg-color);
+}
+
+.modal {
+	position: absolute;
+	top: 40%;
+
+	height: 180px;
+	width: 350px;
+
+	display: flex;
+	flex-direction: column;
+
+	background-color: var(--modal-bg-color);
+	
+	border-radius: 20px;
+}
+
+.modalTitle {
+	margin: 20px;
+
+	font-family: Lato-Regular;
+	font-size: 24px;
+	color: var(--modal-font-color);
+	text-align: center;
+}
+
+.modalInput {
+	width: 70%;
+	margin: 0 auto;
+
+	padding: 10px;
+
+	font-family: Lato-Regular;
+	font-size: 16px;
+	color: var(--modal-input-text-color);
+
+	border: 2px solid transparent;
+	border-radius: 10px;
+
+	outline: none;
+
+	&:focus {
+		border-color: var(--modal-input-focus-border);
+	}
+}
+
+.modalButtons {
+	margin-top: 10px;
+
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+
+.modalButtonApply {
+	width: 80px;
+	height: 40px;
+
+	border: none;
+	border-radius: 5px;
+
+	font-family: Lato-Regular;
+
+	background-color: var(--modal-apply-bg-color);
+
+	&:hover {
+		background-color: var(--modal-hover-apply-bg-color);
+	}
+}
+
+.modalButtonCancel {
+	width: 80px;
+	height: 40px;
+
+	border: none;
+	border-radius: 5px;
+
+	font-family: Lato-Regular;
+
+	background-color: var(--modal-cancel-bg-color);
+
+	&:hover {
+		background-color: var(--modal-hover-cancel-bg-color);
+	}
+}
