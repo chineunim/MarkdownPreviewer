@@ -1,30 +1,18 @@
-# React + TypeScript + Vite
+# Markdown Previewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[The Markdown Previewer App](https://chineunim.github.io/MarkdownPreviewer/) is a user-friendly application developed using React and TypeScript. It provides a convenient way to write and preview markdown text with styled formatting.
 
-Currently, two official plugins are available:
+---
+Features
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Editor window:** Allows users to write markdown text;
+- **Previewer window:** Displays markdown text with styled formatting for easy visualization
+- **Toolbar:** Provides various tools for quick formatting and editing markdown text, suitable to beginners
 
-## Expanding the ESLint configuration
+---
+Getting started
+---
+Follow the link bellow to try this application by yourself
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+https://chineunim.github.io/MarkdownPreviewer/
